@@ -4,38 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Homepage</title>
+    <title>Xiang Meng Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+			font-size: 20px; /* 设置正文字体大小为20像素 */
+        }
+
+        header {            
+			overflow: hidden;
+            text-align: center;
+            background-color: #add8e6; /* #add8e6 #333*/
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header img {
+            float: left;
+            width: 200px;
+            border-radius: 50%;
+            margin-right: 20px; /* 图片与文本之间的间距 */
+        }
+
+        header h1 {
+            line-height: 200px; /* 将标题的行高设置为图片的高度，以使标题垂直居中 */
+            display: inline-block; /* 使标题与图片水平排列 */
+        }
+
+        nav ul {
+			list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #444;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block; /* 使链接水平排列 */
+            margin: 0 10px; /* 设置链接之间的间距 */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px; /* 在主内容区域添加留白 */
+			max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 20px; /* 在每个部分之间添加留白 */
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #f4f4f4;
+            clear: both; /* 清除浮动 */
+			text-align: left; /* 将 footer 文本设为左对齐 */
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome to My Personal Homepage!</h1>
+    <header>
+        <img src="xiangmeng_profile.jpg" alt="Xiang Meng">
+        <h1>Welcome to Xiang Meng (孟祥) Homepage!</h1>
+    </header>
 
-    <h2>About Me</h2>
-    <p>
-        I am <a href="https://scholar.google.com/citations?user=iQAvBl0AAAAJ&hl=zh-TW">Xiang Meng (孟祥)</a>, and welcome to my GitHub page. Currently, I am a Ph.D. candidate in legged robotics at Beijing Institute of Technology (BIT), Beijing, China.
-        I received the B.S. degree in mechatronics engineering from BIT in June 2019. From September 2019, I started pursuing the Ph.D. degree with the Intelligent Robotics Institute, School of Mechatronic Engineering, BIT.
-        My research interests include model-based motion optimization and control for humanoid robots and dynamics.
-    </p>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+			<li><a href="#services">Services</a></li>			
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
 
-    <h2>My Projects</h2>
-    <ul>
-        <li><a href="https://github.com/mx0922/tutorials_trajOptim_MPC">TrajOptim and MPC</a>: A simple and light-weight tutorial for trajectory optimization (TO) and model predictive control (MPC).</li>
-        <li><a href="https://github.com/mx0922/tutorials_MXSpatialDynLib">MXSpatialDynLib</a>: An ultra-lightweight and user-friendly robot dynamics library, which includes solutions for kinematics, dynamics, centroidal dynamics, and various matrix computations, facilitating the research process of model-based motion planning and control for legged robots.</li>
-    </ul>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am <a href="https://scholar.google.com/citations?user=iQAvBl0AAAAJ&hl=zh-TW">Xiang Meng (孟祥)</a>, and welcome to my homepage. Currently, I am a year-4 Ph.D. candidate in legged robotics at Beijing Institute of Technology (BIT), Beijing, China. I received the B.S. degree in mechatronics engineering from BIT in June 2019. From September 2019, I started pursuing the Ph.D. degree with the Intelligent Robotics Institute, <a href="https://smen.bit.edu.cn/">School of Mechatronical Engineering</a>, BIT, under the supervision of <a href="https://smen.bit.edu.cn/szdw/jcrc/gjjgccljrc/13a9cb0a4f0742089bc9887f45a5851a.htm">Prof. Zhangguo Yu</a>. My research interests include model-based motion optimization and control for humanoid robots and dynamics.</p>
+        </section>
 
-    <h2>Latest Publications</h2>
-    <ul>
-        <li><a href="https://ieeexplore.ieee.org/abstract/document/10305536">Online Adaptive Motion Generation for Humanoid Locomotion on Non-Flat Terrain via Template Behavior Extension</a>: Efficient trajectory optimizer and an online nonlinear centroidal MPC to extend the optimized template behaviors.</li>
-        <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-45770-8_85">Optimization of Whole-Body Motion for Humanoid Robot Walking Down Stairs with Small Joint Range of Motion</a>: Cascade efficient optimization of whole-body motion for humanoid robots walking down stairs with small joint range of motion.</li>
-        <li><a href="https://www.mdpi.com/2313-7673/8/1/114">Online Running-Gait Generation for Bipedal Robots with Smooth State Switching and Accurate Speed Tracking</a>: Online running gait generator for bipedal robots with smooth state switching and accurate speed tracking.</li>
-    </ul>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li><a href="https://github.com/mx0922/tutorials_trajOptim_MPC">TrajOptim and MPC</a>: A simple and light-weight tutorial for trajectory optimization (TO) and model predictive control (MPC).</li>
+                <li><a href="https://github.com/mx0922/tutorials_MXSpatialDynLib">MXSpatialDynLib</a>: An ultra-lightweight and user-friendly robot dynamics library, which includes solutions for kinematics, dynamics, centroidal dynamics, and various matrix computations, facilitating the research process of model-based motion planning and control for legged robots.</li>
+            </ul>
+        </section>
 
-    <h2>Contact Me</h2>
-    <ul>
-        <li>Email: <a href="mailto:3120215100@bit.edu.cn">3120215100@bit.edu.cn</a>, <a href="mailto:750996906@qq.com">750996906@qq.com</a> (There may be a delay in responding)</li>
-        <li>Google Scholar: <a href="https://scholar.google.com/citations?user=iQAvBl0AAAAJ&hl=zh-TW">Xiang Meng</a></li>
-        <li>Github: <a href="https://github.com/mx0922">mx0922</a></li>
-    </ul>
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="https://ieeexplore.ieee.org/abstract/document/10305536">Online Adaptive Motion Generation for Humanoid Locomotion on Non-Flat Terrain via Template Behavior Extension</a>, <b>Xiang Meng</b>, Zhangguo Yu, Xuechao Chen, Zelin Huang, Fei Meng, Qiang Huang, IEEE Transactions on Automation and Science Engineering (<b>T-ASE</b>), 2023. (Early Access)</li>
+				<li><a href="https://www.mdpi.com/2313-7673/8/1/114">Online Running-Gait Generation for Bipedal Robots with Smooth State Switching and Accurate Speed Tracking</a>, <b>Xiang Meng</b>, Zhangguo Yu, Xuechao Chen, Zelin Huang, Chencheng Dong, Fei Meng, Biomimetics 8(1), 114, 2023.</li>
+                <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-45770-8_85">Optimization of Whole-Body Motion for Humanoid Robot Walking Down Stairs with Small Joint Range of Motion</a>, <b>Xiang Meng</b>, et al. IFToMM World Congress on Mechanism and Machine Science, pp. 859-868, 2023.</li>
+				<li><a href="https://ieeexplore.ieee.org/abstract/document/8948795">Walking control of biped robots on uneven terrains based on SLIP model</a>, <b>Xiang Meng</b>, Zhangguo Yu, Gao Huang, Xuechao Chen, Weijie Qi, Qiang Huang, Bo Su, IEEE International Conference on Advanced Robotics and its Social Impacts (ARSO), pp. 174-179, 2019.</li>                
+            </ul>
+        </section>
+		
+		<section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li><b>Conference Reviewer:</b> IEEE RobBio' 2024</li>
+            </ul>
+        </section>
+		
+		<section id="contact">
+            <h2>Contact Me</h2>
+            <ul>
+                <li><b>Email:</b> <a href="mailto:3120215100@bit.edu.cn">3120215100@bit.edu.cn</a>, <a href="mailto:750996906@qq.com">750996906@qq.com</a></li>
+				<li><b>Google Scholar:</b> <a href="https://scholar.google.com/citations?user=iQAvBl0AAAAJ&hl=zh-TW">Xiang Meng</a></li>
+				<li><b>Github:</b> <a href="https://github.com/mx0922">mx0922</a></li>
+				<li><b>ORCID:</b> <a href="https://orcid.org/0000-0002-1273-4306">Xiang Meng</a></li>
+            </ul>
+        </section>
+    </main>
 </body>
 
 </html>
