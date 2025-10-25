@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xiang Meng</title>
+    <title>Xiang Meng - 孟祥</title>
     <link rel="icon" href="https://mx0922.github.io/mx-logo.png" type="image/png">
     <style>
         body {
@@ -56,6 +56,7 @@
         header h1 {
             line-height: 200px; /* 将标题的行高设置为图片的高度，以使标题垂直居中 */
             display: inline-block; /* 使标题与图片水平排列 */
+            font-size: 64px;
         }
 
         nav ul {
@@ -113,14 +114,15 @@
     <header>
         <!-- <img src="runningAnimation.gif" alt="biped running" class="gif"> -->
         <img src="xiangmeng_profile.jpg" alt="Xiang Meng">        
-        <h1>Welcome to Xiang Meng Homepage!</h1>
+        <!-- <h1>Welcome to Xiang Meng Homepage!</h1> -->
+        <h1>Xiang Meng - 孟祥</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#about">About Me</a></li>            
             <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
 			<li><a href="#internships">Internships</a></li>
 			<li><a href="#services">Services</a></li>			
             <li><a href="#contact">Contact Me</a></li>
@@ -130,38 +132,42 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! Welcome to my homepage! My name is Xiang Meng (<b>孟祥</b>).  Currently, I am a final-year Ph.D. Candidate in <b>Humanoid Robotics</b> at <a href="https://www.bit.edu.cn/">Beijing Institute of Technology</a> (BIT), Beijing, China. I received the B.S. degree in Mechatronics Engineering (<b>ME</b>) from BIT in June 2019. From September 2019, I started pursuing the Ph.D. degree with the Intelligent Robotics Institute, School of Mechatronical Engineering, BIT, under the supervision of <a href="https://smen.bit.edu.cn/szdw/jcrc/gjjgccljrc/13a9cb0a4f0742089bc9887f45a5851a.htm">Prof. Zhangguo Yu (<b>余张国</b>)</a>.</p>
+            <p>I am a robotics engineer at <a href="https://www.x-humanoid.com/" target="_blank" rel="noopener noreferrer">Beijing Innovation Center of Humanoid Robotics</a>, where I develop advanced motion control algorithm for the <a href="https://www.x-humanoid.com/detail/jstg.html"  target="_blank" rel="noopener noreferrer">Tien-Kung humanoid</a> robot. I obtained my Ph.D. degree in Mechanical Engineering from the Beijing Institute of Technology (BIT) in 2025, under the supervision of Prof. <a href="https://smen.bit.edu.cn/szdw/jcrc/gjjgccljrc/13a9cb0a4f0742089bc9887f45a5851a.htm"  target="_blank" rel="noopener noreferrer">Zhangguo Yu</a>. I received my B.S. degree in Mechatronics Engineering from BIT in 2019, and completed my doctoral research in Prof. <a href="https://ieeexplore.ieee.org/author/37279982900"  target="_blank" rel="noopener noreferrer">Qiang Huang</a> Lab at Intelligent Robotics Institute. During my Ph.D., I was a core member deeply involved in the development of motion control algorithms for the BHR series of humanoid robots.    
+            </p>
 			
 			<p>My research interests include:
 			<ul>
-				<li>multi-rigid-body dynamics computational methods;</li>
-				<li>nonlinear trajectory optimization;</li>
-                <li>linear/nonlinear model predictive locomotion control.</li>				
+				<!-- <li>multi-rigid-body dynamics computational methods;</li> -->
+				<li>trajectory optimization;</li>
+                <li>model predictive control;</li>
+                <li>reinforcement learning.</li>				
 			</ul>
             </p>
 
-            <p>Recently, I have been investigating how to integrate learning-based approaches, such as reinforcement learning (RL) and imitation learning (IL), with model-based motion planning and control frameworks.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <ul>
-                <li><a href="https://github.com/mx0922/M-Robot-3D-Manipulator-ModelandControl">Mbot_Model&Control</a>: An introductory tutorial suitable for undergraduate or graduate students new to  robotics, providing foundational yet crucial knowledge. Readers can gain insight into fundamental topics including the paradigm of multi-axis robot model construction, Lagrangian derivation of multi-rigid-body dynamics, methods for tuning parameters in current, velocity, and position loops for a single motor, basic model-based control techniques, trajectory planning methods, forward and inverse kinematics solvers, numerical simulation animation programming, and more.</li>                
-                <li><a href="https://github.com/mx0922/tutorials_MXSpatialDynLib">MXSpatialDynLib</a>: An ultra-lightweight and user-friendly robot dynamics library based on the spatial dynamics algorithm proposed by Roy Featherstone, which includes various matrix computation involving kinematics, dynamics, and centroidal dynamics, facilitating the researches of model-based motion planning and control for legged robots.</li>
-                <li><a href="https://github.com/mx0922/tutorials_trajOptim_MPC">TrajOptim&MPC</a>: A simple and practical tutorial of trajectory optimization (TO) and model predictive control (MPC) for legged robots and systems. This tutorial also serves as an important study material for the Spring 2024/2025 graduate course "Robot System Design and Application" at BIT.</li>
-                <li><a href="https://github.com/mx0922/MX_UpstairTrajOptim">NLP_AnkTrajOptim4Upstairs</a>: A nonlinear trajectory optimizer for ankle swing trajectory, designed to empower humanoid robots to climb stairs. The nonlinear programming (NLP) is solved by <a href="https://coin-or.github.io/Ipopt/">IPOPT</a>.
-                <li><a href="https://github.com/mx0922/MX_TO_Hopper">TO_Hopper</a>: A <a href="https://github.com/ethz-adrl/towr">TOWR</a>-inspired continuous jumping motion optimization for a one-legged robot. With the direct collocation and the NLP solver fmincon of matlab, the trajectory optimizer can automatically optimize the position of the footholds, the swing trajectories of the foot, the contact forces and the motion trajectory of the floating-base by using the nonlinear hybrid dynamics and the phase-based end-effector constraints.</li>
-            </ul>
-        </section>
+            <!-- <p>Recently, I have been investigating how to integrate learning-based approaches, such as reinforcement learning (RL) and imitation learning (IL), with model-based motion planning and control frameworks.   
+            </p> -->
+        </section>       
 
         <section id="publications">
             <h2>Publications</h2>
             <ul>
-                <li><b>Xiang Meng</b>, Zhangguo Yu, Xuechao Chen, Zelin Huang, Fei Meng, Qiang Huang, <a href="https://ieeexplore.ieee.org/abstract/document/10305536">Online Adaptive Motion Generation for Humanoid Locomotion on Non-Flat Terrain via Template Behavior Extension</a>, IEEE Transactions on Automation and Science Engineering (<b>T-ASE</b>), 21(4): 6563-6574, 2023. <span style="color: red;">(SCI Top, IF: 5.9, Presented in <b>IEEE ICRA 2024</b>)</span></li>
-				<li><b>Xiang Meng</b>, Zhangguo Yu, Xuechao Chen, Zelin Huang, Chencheng Dong, Fei Meng, <a href="https://www.mdpi.com/2313-7673/8/1/114">Online Running-Gait Generation for Bipedal Robots with Smooth State Switching and Accurate Speed Tracking</a>, <b>Biomimetics</b>, 8(1): 114, 2023. <span style="color: red;">(SCI, IF: 4.5, Selected as Journal Title Story)</span></li>
-                <li><b>Xiang Meng</b>, et al. <a href="https://link.springer.com/chapter/10.1007/978-3-031-45770-8_85">Optimization of Whole-Body Motion for Humanoid Robot Walking Down Stairs with Small Joint Range of Motion</a>, IFToMM World Congress 2023 on Mechanism and Machine Science, pp. 859-868, 2023. <span style="color: red;">(EI, oral)</span></li>
-				<li><b>Xiang Meng</b>, Zhangguo Yu, Gao Huang, Xuechao Chen, Weijie Qi, Qiang Huang, Bo Su, <a href="https://ieeexplore.ieee.org/abstract/document/8948795">Walking Control of Biped Robots on Uneven Terrains Based on SLIP Model</a>, 2019 IEEE International Conference on Advanced Robotics and its Social Impacts (ARSO), pp. 174-179, 2019. <span style="color: red;">(EI, oral)</span></li>                
+                <li><b>Xiang Meng</b>, Zhangguo Yu, Xuechao Chen, Fei Meng, Qiang Huang, High-Frequency Control for Perturbation Rejection in Dynamic Biped Walking via Sequential Centroidal Model Predictive Control, IEEE/ASME Transactions on Mechatronics (<b>T-Mech</b>), 2025. <span style="color: red;">(Accepted, SCI Top, IF: 7.3)</span></li>
+                <li><b>Xiang Meng</b>, Zhangguo Yu, Xuechao Chen, Zelin Huang, Fei Meng, Qiang Huang, <a href="https://ieeexplore.ieee.org/abstract/document/10305536" target="_blank" rel="noopener noreferrer">Online Adaptive Motion Generation for Humanoid Locomotion on Non-Flat Terrain via Template Behavior Extension</a>, IEEE Transactions on Automation and Science Engineering (<b>T-ASE</b>), 21(4): 6563-6574, 2023. <span style="color: red;">(SCI Top, IF: 6.4, Presented in <b>IEEE ICRA 2024</b>)</span></li>
+                <li><b>Xiang Meng</b>, Zhangguo Yu, Tao Han, Xiaofeng Liu, Qingqing Li, Xuechao Chen, Fei Meng, Qiang Huang, Adaptive Disturbance Rejection Balance Control for Humanoid Robots via Variable-Inertia Centroidal MPC, <b>Journal of Bionic Engineering</b>, 2025. <span style="color: red;">(Accepted, SCI, IF: 5.8)</span></li>
+				<li><b>Xiang Meng</b>, Zhangguo Yu, Xuechao Chen, Zelin Huang, Chencheng Dong, Fei Meng, <a href="https://www.mdpi.com/2313-7673/8/1/114" target="_blank" rel="noopener noreferrer">Online Running-Gait Generation for Bipedal Robots with Smooth State Switching and Accurate Speed Tracking</a>, <b>Biomimetics</b>, 8(1): 114, 2023. <span style="color: red;">(SCI, IF: 4.5, Selected as Journal Title Story)</span></li>
+                <li><b>Xiang Meng</b>, et al. <a href="https://link.springer.com/chapter/10.1007/978-3-031-45770-8_85" target="_blank" rel="noopener noreferrer">Optimization of Whole-Body Motion for Humanoid Robot Walking Down Stairs with Small Joint Range of Motion</a>, IFToMM World Congress 2023 on Mechanism and Machine Science, pp. 859-868, 2023. <span style="color: red;">(EI, oral)</span></li>
+				<li><b>Xiang Meng</b>, Zhangguo Yu, Gao Huang, Xuechao Chen, Weijie Qi, Qiang Huang, Bo Su, <a href="https://ieeexplore.ieee.org/abstract/document/8948795" target="_blank" rel="noopener noreferrer">Walking Control of Biped Robots on Uneven Terrains Based on SLIP Model</a>, 2019 IEEE International Conference on Advanced Robotics and its Social Impacts (ARSO), pp. 174-179, 2019. <span style="color: red;">(EI, oral)</span></li>                
+            </ul>
+        </section>
+
+         <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/mx0922/M-Robot-3D-Manipulator-ModelandControl" target="_blank" rel="noopener noreferrer">Mbot_Model&Control</a>: An introductory tutorial for undergraduate and graduate students new to robotics, offering essential foundational knowledge. It covers key topics such as multi-axis robot modeling, Lagrangian-based multi-body dynamics, motor loop parameter tuning (current, velocity, and position), basic model-based control, trajectory planning, kinematics solvers, and numerical simulation with animation.</li>                
+                <li><a href="https://github.com/mx0922/tutorials_MXSpatialDynLib" target="_blank" rel="noopener noreferrer">MXSpatialDynLib</a>: An ultra-lightweight and user-friendly robot dynamics library based on the spatial dynamics algorithm, which includes various matrix computation involving kinematics, dynamics, and centroidal dynamics, facilitating the researches of model-based motion control for legged robots.</li>
+                <li><a href="https://github.com/mx0922/tutorials_trajOptim_MPC" target="_blank" rel="noopener noreferrer">TrajOptim&MPC</a>: A simple and practical tutorial of trajectory optimization (TO) and model predictive control (MPC) for legged robots and systems. This tutorial also serves as an important study material for the Spring 2024/2025 graduate course <em>"Robot System Design and Application"</em> at BIT.</li>
+                <li><a href="https://github.com/mx0922/MX_UpstairTrajOptim" target="_blank" rel="noopener noreferrer">NLP_AnkTrajOptim4Upstairs</a>: A nonlinear trajectory optimizer for ankle swing motion, designed to enable humanoid robots with rectangular or polygonal feet to climb stairs safely. The nonlinear programming (NLP) formulation focuses on collision-free swing trajectory generation and is solved using <a href="https://coin-or.github.io/Ipopt/" target="_blank" rel="noopener noreferrer">IPOPT</a>.
+                <li><a href="https://github.com/mx0922/MX_TO_Hopper" target="_blank" rel="noopener noreferrer">TO_Hopper</a>: A <a href="https://github.com/ethz-adrl/towr" target="_blank" rel="noopener noreferrer">TOWR</a>-inspired continuous jumping motion optimization for a one-legged robot. With the direct collocation and the NLP solver fmincon of matlab, the trajectory optimizer can automatically optimize the position of the footholds, the swing trajectories of the foot, the contact forces and the motion trajectory of the floating-base by using the nonlinear hybrid dynamics and the phase-based end-effector constraints.</li>
             </ul>
         </section>
 
@@ -175,18 +181,18 @@
 		<section id="services">
             <h2>Services</h2>
             <ul>
-                <li><b>Conference Reviewer:</b> RSS 2024, IEEE BioRob 2024, IEEE/RSJ IROS 2025</li>
-                <li><b>Journal Reviewer:</b> T-ASE, RA-L, RAS, Advanced Robotics, Biomimetics</li>
+                <li><b>Conference Reviewer:</b> RSS(2024), IROS(2025)</li>
+                <li><b>Journal Reviewer:</b> T-RO, T-ASE, RA-L, RAS, Advanced Robotics</li>
             </ul>
         </section>
 		
 		<section id="contact">
             <h2>Contact Me</h2>
             <ul>
-                <li><b>Email:</b> <a href="mailto:3120215100@bit.edu.cn">3120215100@bit.edu.cn</a>, <a href="mailto:750996906@qq.com">750996906@qq.com</a></li>
-				<li><b>Google Scholar:</b> <a href="https://scholar.google.com/citations?user=iQAvBl0AAAAJ&hl=zh-TW">Xiang Meng</a></li>
-				<li><b>Github:</b> <a href="https://github.com/mx0922">mx0922</a></li>
-				<li><b>ORCID:</b> <a href="https://orcid.org/0000-0002-1273-4306">Xiang Meng</a></li>
+                <li><b>Email:</b> <a href="mailto:bitmengxiang@gmail.com"  target="_blank" rel="noopener noreferrer">bitmengxiang@gmail.com</a>, <a href="mailto:750996906@qq.com" target="_blank" rel="noopener noreferrer">750996906@qq.com</a></li>
+				<li><b>Google Scholar:</b> <a href="https://scholar.google.com/citations?user=iQAvBl0AAAAJ&hl=zh-TW" target="_blank" rel="noopener noreferrer">Xiang Meng</a></li>
+				<li><b>Github:</b> <a href="https://github.com/mx0922" target="_blank" rel="noopener noreferrer">mx0922</a></li>
+				<li><b>ORCID:</b> <a href="https://orcid.org/0000-0002-1273-4306" target="_blank" rel="noopener noreferrer">Xiang Meng</a></li>
             </ul>
         </section>
     </main>
